@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ClipCore (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ClipCore (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
