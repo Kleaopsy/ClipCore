@@ -43,5 +43,47 @@ Perfect for developers, designers, and power users who copy and paste all day lo
 
 ---
 
-## 🧩 Project Structure
+## 🚀 Installation
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kleaopsy/ClipCore.git
+   cd ClipCore
+
+---
+
+## 📸 Screenshots
+
+Below are some screenshots of **ClipCore** in action on Windows 11.  
+Each section demonstrates a key part of the interface and its functionality.
+
+| Home Page | Settings Page |
+|------------|----------------|
+| ![Home](Assets/Screenshots/home.png) | ![Settings](Assets/Screenshots/settings.png) |
+
+| Image Preview | Text Preview |
+|----------------|---------------|
+| ![Image Preview](Assets/Screenshots/image_preview.png) | ![Text Preview](Assets/Screenshots/text_preview.png) |
+
+> 💡 *The interface is fully responsive to Windows 11’s light and dark themes, using native WinUI 3 components for a seamless experience.*
+
+---
+
+## 🧠 Interface Highlights
+
+- **Home Page:** Displays clipboard history with item type icons and quick access buttons.  
+- **Settings:** Customize clipboard behavior, auto-clean intervals, and privacy filters.  
+- **Image Preview:** Instantly shows copied image thumbnails and allows saving or re-copying.  
+- **Text Preview:** Displays copied text with formatting, quick copy, and favorite options.  
+
+---
+
+## 🪶 UI Design Philosophy
+
+ClipCore’s interface was designed with minimalism and clarity in mind.  
+Every element follows Windows 11’s Fluent Design guidelines — rounded corners, subtle shadows, and fluid animations.  
+The goal was to create a **productivity tool that feels like a native part of the OS.**
+
+---
+
+*(All screenshots are taken from the development build on Windows 11.)*
