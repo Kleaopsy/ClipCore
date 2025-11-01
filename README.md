@@ -43,15 +43,6 @@ Perfect for developers, designers, and power users who copy and paste all day lo
 
 ---
 
-## 🚀 Installation
-
-1. Clone the repository:
-   ```bash 
-   git clone https://github.com/Kleaopsy/ClipCore.git
-   cd ClipCore
-
----
-
 ## 📸 Screenshots
 
 Below are some screenshots of **ClipCore** in action on Windows 11.  
@@ -87,3 +78,12 @@ The goal was to create a **productivity tool that feels like a native part of th
 ---
 
 *(All screenshots are taken from the development build on Windows 11.)*
+
+---
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash 
+   git clone https://github.com/Kleaopsy/ClipCore.git
+   cd ClipCore
