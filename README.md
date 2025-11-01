@@ -59,11 +59,11 @@ Each section demonstrates a key part of the interface and its functionality.
 
 | Home Page | Settings Page |
 |------------|----------------|
-| ![Home](Assets/Screenshots/home.png) | ![Settings](Assets/Screenshots/settings.png) |
+| ![Home](Screenshots/home.png) | ![Settings](Screenshots/settings.png) |
 
 | Image Preview | Text Preview |
 |----------------|---------------|
-| ![Image Preview](Assets/Screenshots/image_preview.png) | ![Text Preview](Assets/Screenshots/text_preview.png) |
+| ![Image Preview](Screenshots/image_preview.png) | ![Text Preview](Screenshots/text_preview.png) |
 
 > 💡 *The interface is fully responsive to Windows 11’s light and dark themes, using native WinUI 3 components for a seamless experience.*
 
