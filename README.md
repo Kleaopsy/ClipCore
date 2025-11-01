@@ -46,7 +46,7 @@ Perfect for developers, designers, and power users who copy and paste all day lo
 ## 🚀 Installation
 
 1. Clone the repository:
-   ```bash
+   ```bash 
    git clone https://github.com/Kleaopsy/ClipCore.git
    cd ClipCore
 
