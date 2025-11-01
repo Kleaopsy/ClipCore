@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Window
     x:Class="ClipCore.ClipCoreWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -14,7 +14,7 @@
     </Window.SystemBackdrop>
 
     <Grid>
-        <Grid x:Name="AppTitleBar"
+        <Grid x:ConnectionId='2' x:Name="AppTitleBar"
               Height="48"
               VerticalAlignment="Top"
               ColumnSpacing="8"
@@ -31,20 +31,20 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="NavigationBtn" Grid.Column="0"
+                <Button x:ConnectionId='21' x:Name="NavigationBtn" Grid.Column="0"
                         Visibility="Visible"
                         Content="&#xE700;"  FontFamily="Segoe Fluent Icons"
                         Width="36" Height="36"
                         HorizontalAlignment="Center"
                         Style="{StaticResource TransparentButtonStyle2}"
-                        Background="Transparent" Click="NavigationBtn_Click">
+                        Background="Transparent"                            >
                 </Button>
-                <Image x:Name="appIcon" Grid.Column="1" Visibility="Collapsed" Source="/Assets/Images/Logos/ClipCoreIcon32.ico" Width="32" Height="24" VerticalAlignment="Center" />
+                <Image x:ConnectionId='22' x:Name="appIcon" Grid.Column="1" Visibility="Collapsed" Source="/Assets/Images/Logos/ClipCoreIcon32.ico" Width="32" Height="24" VerticalAlignment="Center" />
                 <TextBlock Grid.Column="2" Text="ClipCore" VerticalAlignment="Center" FontWeight="SemiBold" Margin="3, -2, 0, 0"/>
             </Grid>
 
             <Grid Grid.Column="1" VerticalAlignment="Center">
-                <Button x:Name="SearchIconBtn"
+                <Button x:ConnectionId='17' x:Name="SearchIconBtn"
                         Visibility="Visible"
                         Content="&#xE721;"  FontFamily="Segoe Fluent Icons"
                         Width="36" Height="36"
@@ -52,7 +52,7 @@
                         Style="{StaticResource TransparentButtonStyle}"
                         Background="Transparent">
                     <Button.Flyout>
-                        <Flyout Placement="Bottom" x:Name="SearchFlyout">
+                        <Flyout x:ConnectionId='19' Placement="Bottom" x:Name="SearchFlyout">
                             <Flyout.FlyoutPresenterStyle>
                                 <Style TargetType="FlyoutPresenter">
                                     <Setter Property="Background" Value="Transparent"/>
@@ -62,28 +62,28 @@
                                 </Style>
                             </Flyout.FlyoutPresenterStyle>
                             <StackPanel Margin="0">
-                                <AutoSuggestBox x:Name="FlyoutSearchBox"
+                                <AutoSuggestBox x:ConnectionId='20' x:Name="FlyoutSearchBox"
                                 QueryIcon="Find" Width="200"
-                                PlaceholderText="Search..." TextChanged="AutoSuggestBox_TextChanged"
+                                PlaceholderText="Search..."                                         
                                 Height="32" />
                             </StackPanel>
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <AutoSuggestBox x:Name="SearchBox"
+                <AutoSuggestBox x:ConnectionId='18' x:Name="SearchBox"
                 Visibility="Collapsed"
                 QueryIcon="Find"
-                PlaceholderText="Search..." TextChanged="AutoSuggestBox_TextChanged"
+                PlaceholderText="Search..."                                         
                 Height="32"
                 Margin="0,0,8,0" />
 
             </Grid>
 
-            <Grid x:Name="SystemButtonsPlaceholder" Grid.Column="2" />
+            <Grid x:ConnectionId='16' x:Name="SystemButtonsPlaceholder" Grid.Column="2" />
         </Grid>
 
         <Grid Margin="0,48,0,0">
-            <SplitView x:Name="mainSplitView" 
+            <SplitView x:ConnectionId='3' x:Name="mainSplitView" 
            DisplayMode="Overlay" 
            IsPaneOpen="False" 
            CompactPaneLength="48" 
@@ -101,7 +101,7 @@
                             </Grid.RowDefinitions>
 
                             <!-- Top Buttons -->
-                            <Grid x:Name="mainStackPanel" 
+                            <Grid x:ConnectionId='4' x:Name="mainStackPanel" 
                             Grid.Row="0"
                             Opacity="0"
                             Padding="4,2,4,0">
@@ -109,40 +109,40 @@
                                     <TranslateTransform X="50"/>
                                 </Grid.RenderTransform>
 
-                                <Border x:Name="indicatorBorder"
+                                <Border x:ConnectionId='7' x:Name="indicatorBorder"
                                 Background="{ThemeResource SystemAccentColor}"
                                 Width="3" HorizontalAlignment="Left"
                                 VerticalAlignment="Top"
                                 Margin="0, 10, 0, 0"
                                 Visibility="Collapsed"/>
                                 
-                                <StackPanel x:Name="NavigationButtonsStack">
+                                <StackPanel x:ConnectionId='8' x:Name="NavigationButtonsStack">
                                     
-                                    <Button x:Name="homeButton"
+                                    <Button x:ConnectionId='9' x:Name="homeButton"
                                         Style="{StaticResource NavigationButtonStyle}"
-                                        Click="HomeButton_Click">
+                                                                >
                                         <StackPanel Orientation="Horizontal" Spacing="16">
                                             <FontIcon Glyph="&#xE80F;" FontSize="18"/>
-                                            <TextBlock x:Name="HomepageText" Text="Homepage" VerticalAlignment="Center" FontSize="14"/>
+                                            <TextBlock x:ConnectionId='14' x:Name="HomepageText" Text="Homepage" VerticalAlignment="Center" FontSize="14"/>
                                         </StackPanel>
                                     </Button>
 
-                                    <Button x:Name="favoritesButton" Margin="0,4,0,0"
+                                    <Button x:ConnectionId='10' x:Name="favoritesButton" Margin="0,4,0,0"
                                         Style="{StaticResource NavigationButtonStyle}"
-                                        Click="FavoritesButton_Click">
+                                                                     >
                                         <StackPanel Orientation="Horizontal" Spacing="16">
                                             <FontIcon Glyph="&#xE734;" FontSize="18"/>
-                                            <TextBlock x:Name="FavoritesText" Text="Favorites" VerticalAlignment="Center" FontSize="14"/>
+                                            <TextBlock x:ConnectionId='13' x:Name="FavoritesText" Text="Favorites" VerticalAlignment="Center" FontSize="14"/>
                                         </StackPanel>
                                     </Button>
 
 
-                                    <Button x:Name="settingsButton" Margin="0,4,0,0"
+                                    <Button x:ConnectionId='11' x:Name="settingsButton" Margin="0,4,0,0"
                                         Style="{StaticResource NavigationButtonStyle}"
-                                        Click="SettingsButton_Click">
+                                                                    >
                                         <StackPanel Orientation="Horizontal" Spacing="16">
                                             <FontIcon Glyph="&#xE713;" FontSize="18"/>
-                                            <TextBlock x:Name="SettingsText" Text="Settings" VerticalAlignment="Center" FontSize="14"/>
+                                            <TextBlock x:ConnectionId='12' x:Name="SettingsText" Text="Settings" VerticalAlignment="Center" FontSize="14"/>
                                         </StackPanel>
                                     </Button>
                                     
@@ -150,9 +150,9 @@
                             </Grid>
 
                             <!-- Bottom Exit Button -->
-                            <Button x:Name="exitButton"
+                            <Button x:ConnectionId='5' x:Name="exitButton"
                             Grid.Row="1"
-                            Click="ExitButton_Click"
+                                                    
                             HorizontalAlignment="Stretch"
                             HorizontalContentAlignment="Left"
                             Background="Transparent"
@@ -162,7 +162,7 @@
                             Margin="4,4,4,12">
                                 <StackPanel Orientation="Horizontal" Spacing="16">
                                     <FontIcon Glyph="&#xE7E8;" FontSize="18"/>
-                                    <TextBlock x:Name="ExitText" Text="Exit" VerticalAlignment="Center" FontSize="14"/>
+                                    <TextBlock x:ConnectionId='6' x:Name="ExitText" Text="Exit" VerticalAlignment="Center" FontSize="14"/>
                                 </StackPanel>
                             </Button>
                         </Grid>
@@ -171,9 +171,10 @@
 
                 <!--   Content  -->
                 <SplitView.Content>
-                    <Frame x:Name="contentFrame"/>
+                    <Frame x:ConnectionId='15' x:Name="contentFrame"/>
                 </SplitView.Content>
             </SplitView>
         </Grid>
     </Grid>
 </Window>
+

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</Source>
+    <SmallTileSource>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</SmallTileSource>
+    <MediumTileSource>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</MediumTileSource>
+    <WideTileSource>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</WideTileSource>
+    <LargeTileSource>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</LargeTileSource>
+    <AppIconSource>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</AppIconSource>
+    <SplashScreenSource>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</SplashScreenSource>
+    <PackageLogoSource>D:\Projects\Software Projects\Visual Studio\ClipCore\ClipCore\Assets\Images\Logos\ClipCoreIcon.png</PackageLogoSource>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="Assets\Pages\Homepage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <None Update="ClipCoreWindow.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>
